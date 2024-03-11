@@ -6,7 +6,7 @@
  
 </p>
 
-Quicksell foi um projeto que buscou solucionar problemas com registro de vendas e obter a visualizacao dos seus dados.
+Esse foi um projeto que buscou solucionar problemas com registro de vendas e obter a visualizacao dos seus dados.
 
 ## Tecnologias utilizadas no projeto e suas finalidades
 
@@ -27,25 +27,17 @@ Quicksell foi um projeto que buscou solucionar problemas com registro de vendas 
    - Docker
 
 ## ⤵ Uso
-$ Abra o VsCode e com a extensao Live Server abra o arquivo frontend/pages/login.html.
+$ Abra o VS Code e, com a extensão Live Server, abra o arquivo frontend/pages/login.html.
 
 ## ⤵ Instalação
-$ Pré-requisitos para testar o projeto na sua máquina:
+$ Caso você queira, pode testar o projeto na sua máquina
+
+$ Pré-requisitos para poder testar o projeto na sua máquina:
   - Java
   - MySQL
   - Docker-Compose
 
-$ Configure suas as credenciais do banco de dados no arquivo src\main\resources\application-dev.properties
-
-```sh
-
-spring.datasource.url=jdbc:mysql://localhost:3306/quicksell
-spring.datasource.username="Seu username"
-spring.datasource.password="Sua senha"
-
-```
-
-$ Abra o terminal na pasta backend e digite:
+Abra o terminal na pasta backend e digite:
  
 ```sh
 
@@ -53,4 +45,4 @@ sudo docker-compose up
 
 ```
 
-$ Abra o VsCode e com a extensao Live Server abra o arquivo frontend/pages/login.html.
+$ Abra o VS Code e, com a extensão Live Server, abra o arquivo frontend/pages/login.html.
