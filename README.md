@@ -26,10 +26,11 @@ Quicksell foi um projeto que buscou solucionar problemas com registro de vendas 
    - Postman
    - Docker
 
-## ⤵ Instalação
-$ Caso você queira, pode testar o projeto na sua máquina
+## ⤵ Uso
+$ Abra o VsCode e com a extensao Live Server abra o arquivo frontend/pages/login.html.
 
-$ Pré-requisitos:
+## ⤵ Instalação
+$ Pré-requisitos para testar o projeto na sua máquina:
   - Java
   - MySQL
   - Docker-Compose
@@ -52,10 +53,4 @@ sudo docker-compose up
 
 ```
 
-$ Entre na pasta "frontend/pages" e abra o arquivo "login.html" com a extensao live server do vscode.
-
-## Informações adicionais 
-
-O projeto está localizado na porta 8080.
-
-Caso queira acessar diretamente o banco de dados da aplicacao, ele esta localizado na porta 3307.
+$ Abra o VsCode e com a extensao Live Server abra o arquivo frontend/pages/login.html.
