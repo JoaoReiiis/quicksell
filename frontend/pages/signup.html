@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/quicksellicon.png">
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="../scripts/signup.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <title>Quick Sell</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Junte-se a nós hoje e comece a trilhar o caminho para o seu futuro brilhante.</h1>
+            <img src="../assets/account-animate.svg" class="left-login-image" alt="Sale animation">
+        </div>
+
+        <div class="right-login">
+            <form class="form-login">
+                <div class="card-login">
+                    <h1>Criar conta</h1>
+                    <div class="textfield">
+                        <label for="username">Nome de usuario</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+
+                    <div class="textfield">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="btn">
+                        <button class="btn-login" onclick="signup()" type="button">Criar Conta</button>
+                    </div>
+                    <a class="a-cadastro" href="login.html">Ja possui uma conta?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

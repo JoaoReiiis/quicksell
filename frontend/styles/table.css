@@ -1,0 +1,59 @@
+@import 'main.css';
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    overflow: hidden; 
+    border-radius: 12px;
+}
+
+td, th{
+    padding: 15px 20px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--quaternary);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+tr {
+    width: 100%;
+    background-color: var(--transparent-textcolor);
+    color: var(--quaternary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: var( --transparent-textcolor--secondary);
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        min-width: 90vw;
+        margin-bottom: 100px;
+    }
+
+    th {
+        display: none;
+    }
+
+    tr td {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 15ch auto;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+    }
+
+    tr td::before{
+       content: attr(data-cell);
+       text-transform: capitalize;
+       font-weight: 800;
+    }
+}

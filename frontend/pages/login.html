@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/quicksellicon.png">
+    <link rel="stylesheet" href="../styles/login.css">
+    <script src="../scripts/login.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <title>Quick Sell</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login agora e explore oportunidades incríveis em nosso sistema de vendas!</h1>
+            <img src="../assets/mobile-login-animate.svg" class="left-login-image" alt="Sale animation">
+        </div>
+
+        <div class="right-login">
+            <form class="form-login">
+                <div class="card-login">
+
+                    <h1>Login</h1>
+                    <div class="textfield">
+                        <label for="username">Nome de usuario</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+
+                    <div class="textfield">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="btn">
+                        <button class="btn-login" onclick="login()" type="button">Login</button>
+                        <button class="btn-login" onclick="window.location.href = 'signup.html'"
+                            type="button">Cadastrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
