@@ -127,21 +127,21 @@ function loadCharts(userData, allData, products) {
 async function getVendas() {
     let key = "Authorization";
 
-    const userResponse = await fetch("http://3.92.139.182:8080/sale/user", {
+    const userResponse = await fetch("http://localhost:8080/sale/user", {
         method: "GET",
         headers: new Headers({
             Authorization: localStorage.getItem(key),
         }),
     });
 
-    const allResponse = await fetch("http://3.92.139.182:8080/sale", {
+    const allResponse = await fetch("http://localhost:8080/sale", {
         method: "GET",
         headers: new Headers({
             Authorization: localStorage.getItem(key),
         }),
     });
 
-    const productResponse = await fetch("http://3.92.139.182:8080/product", {
+    const productResponse = await fetch("http://localhost:8080/product", {
         method: "GET",
         headers: new Headers({
             Authorization: localStorage.getItem(key),

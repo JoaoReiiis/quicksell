@@ -1,7 +1,7 @@
 async function getProduto() {
     let key = "Authorization";
 
-    const response = await fetch("http://3.92.139.182:8080/product", {
+    const response = await fetch("http://localhost:8080/product", {
         method: "GET",
         headers: new Headers({
             Authorization: localStorage.getItem(key),
@@ -31,7 +31,7 @@ async function cadastroProduto() {
         let descricao = document.getElementById("descricao").value;
         let key = "Authorization";
 
-        const response = await fetch("http://3.92.139.182:8080/product", {
+        const response = await fetch("http://localhost:8080/product", {
             method: "POST",
             headers: new Headers({
                 "Content-Type": "application/json; charset=utf8",
@@ -82,7 +82,7 @@ async function atualizarProduto() {
         let descricao = document.getElementById("descricao").value;
         let key = "Authorization";
 
-        const response = await fetch(`http://3.92.139.182:8080/product/${id}`, {
+        const response = await fetch(`http://localhost:8080/product/${id}`, {
             method: "PUT",
             headers: new Headers({
                 "Content-Type": "application/json; charset=utf8",
@@ -125,7 +125,7 @@ async function deletarProduto() {
         let id = document.getElementById("id").value;
         let key = "Authorization";
 
-        const response = await fetch(`http://3.92.139.182:8080/product/${id}`, {
+        const response = await fetch(`http://localhost:8080/product/${id}`, {
             method: "DELETE",
             headers: new Headers({
                 Authorization: localStorage.getItem(key),

@@ -1,7 +1,7 @@
 async function getVenda() {
     let key = "Authorization";
 
-    const response = await fetch("http://3.92.139.182:8080/sale/user", {
+    const response = await fetch("http://localhost:8080/sale/user", {
         method: "GET",
         headers: new Headers({
             Authorization: localStorage.getItem(key),
@@ -33,7 +33,7 @@ async function cadastroVenda() {
             id: id,
         });
 
-        const response = await fetch("http://3.92.139.182:8080/sale", {
+        const response = await fetch("http://localhost:8080/sale", {
             method: "POST",
             headers: new Headers({
                 "Content-Type": "application/json; charset=utf8",
@@ -77,7 +77,7 @@ async function deletarVenda() {
         let id = document.getElementById("id").value;
         let key = "Authorization";
 
-        const response = await fetch(`http://3.92.139.182:8080/sale/${id}`, {
+        const response = await fetch(`http://localhost:8080/sale/${id}`, {
             method: "DELETE",
             headers: new Headers({
                 Authorization: localStorage.getItem(key),

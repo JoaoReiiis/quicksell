@@ -4,7 +4,7 @@ async function signup() {
 
   console.log(username, password);
 
-  const response = await fetch("http://3.92.139.182:8080/user", {
+  const response = await fetch("http://localhost:8080/user", {
     method: "POST",
     headers: new Headers({
       "Content-Type": "application/json; charset=utf8",

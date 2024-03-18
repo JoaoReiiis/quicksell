@@ -3,7 +3,7 @@ async function login() {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
   
-    const response = await fetch("http://3.92.139.182:8080/login", {
+    const response = await fetch("http://localhost:8080/login", {
       method: "POST",
       headers: new Headers({
         "Content-Type": "application/json; charset=utf8",

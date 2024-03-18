@@ -1,6 +1,6 @@
 async function getUser() {
     let key = "Authorization";
-    const id = await fetch("http://3.92.139.182:8080/user", {
+    const id = await fetch("http://localhost:8080/user", {
         method: "GET",
         headers: new Headers({
             Authorization: localStorage.getItem(key),
@@ -9,7 +9,7 @@ async function getUser() {
 
     var userId = await id.json();
 
-    const response = await fetch(`http://3.92.139.182:8080/user/${userId}`, {
+    const response = await fetch(`http://localhost:8080/user/${userId}`, {
         method: "GET",
         headers: new Headers({
             Authorization: localStorage.getItem(key),
@@ -36,7 +36,7 @@ async function atualizarSenha() {
         let password = document.getElementById("password").value;
         let key = "Authorization";
 
-        const id = await fetch("http://3.92.139.182:8080/user", {
+        const id = await fetch("http://localhost:8080/user", {
             method: "GET",
             headers: new Headers({
                 Authorization: localStorage.getItem(key),
@@ -45,7 +45,7 @@ async function atualizarSenha() {
 
         var userId = await id.json();
 
-        const response = await fetch(`http://3.92.139.182:8080/user/${userId}`, {
+        const response = await fetch(`http://localhost:8080/user/${userId}`, {
             method: "PUT",
             headers: new Headers({
                 "Content-Type": "application/json; charset=utf8",
@@ -86,7 +86,7 @@ async function deletarUser() {
         let id = document.getElementById("id").value;
         let key = "Authorization";
         
-        const response = await fetch(`http://3.92.139.182:8080/user/${id}`, {
+        const response = await fetch(`http://localhost:8080/user/${id}`, {
             method: "DELETE",
             headers: new Headers({
                 Authorization: localStorage.getItem(key),
